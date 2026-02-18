@@ -1,0 +1,11 @@
+you can declare a pointer with a particular type, but you dont have to point it to an initial value.
+
+var p *int
+the * means that p is not an int, but its points to a variable of that type.
+Tautological condition: means its always the same.
+
+//Instead of pointing to a variable, you can point a pointer to the memory address of the variable and u can do this using &.
+//The type of the variable is written before the variable name.
+//The * is used to declare a pointer variable.
+//The & is used to get the memory address of a variable.
+//When you change a pointer thats pointing to a variable, you are actually changing the underlying variable.

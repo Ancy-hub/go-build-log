@@ -1,0 +1,15 @@
+memory is allocated and deallocated automatically
+the go runtime is statically linked
+memory is managed in the runtime in dedicated threads.
+
+using maps and key value pairs require proper memory allocation.
+2 built-in functions: make() and new() for maps, slices and channels
+new():
+the new() fn allocates, but doesnt initialize memory.
+when you allocate memory for a map: use new(), you will get back a memory address indicating the location of the map in memory, but map has zero memory storage.
+if you try to add a key-value pair to the map, it will cause an error.
+make():
+both allocates and initalizes memory. you will get back memory address just like new() but storage is non-zero and ready to accept values. 
+
+memory is deallocated by GC garbage collector. built for low latency.
+objects out of scope or set to nil are eligible. 

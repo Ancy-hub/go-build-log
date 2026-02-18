@@ -1,0 +1,39 @@
+Go is a compiled language. 
+Go is compiled to a form which runs on a single OS.
+It is statically types language.
+Go tool can run a file without precompiling
+Compiled executables are OS-specific.
+Applications have a statically linked runtime.
+No external VM is needed.
+
+Has some OOPS features- like you can definer custom interfaces. - custom types can implement one or more features. -  custom types can have member methods.-customs structs(data structures) can have member fields.
+No type inhertiance in go.- no method or operator overloading. -structured exception handling(it just returns the error and you have to apply conditional logic to resolve it). -implicit numeric conversions.
+
+Is desgined as a next-gen language for C.
+Borrows syntaxes from C, Pascal, Modula, Oberon etc.
+Tries to reduce the amount of typing.
+
+It is case sensitive.- variables and package names are camelcase, exported funcs and fields have initial upper case characters. -line feed ends a statement with no semi-colon required.
+semi-colon are part of the formal lang sepc- the lexer adds them as needed during compilation.
+code blocks are wrapped with braces.
+place starting brace on the same line as preceding statement.(else lexer will place a semi-colon leading to error)
+
+built-in functions, members of builtin package - len(string) returns length of a string. - panic(error) stops execution, displays error message. - recover() manages behaviour of a panicking go routine. 
+
+to run- go run filename.go
+
+
+Go is statically types lang, meaning each var must be assigned to  a type and once assigned, it cant be changed. - implicit or explicit. 
+Explicit menas direct setting. var anInteger int =42 and var aString string = "Hello."
+Implicit means compiler infers the type from the initial value we gave. anInteger:=42 and aString:= "Hello". type is static and cant be changed.
+
+types: bool, string, uint8 uint16 uint32 unint64 (unsigned), int8 int16 int32 int64. aliases: byte uint int unintptr, float32 float64, complex64 complex128.
+data collections: Arrays Slices Maps structs
+language organisation: Functions Interfaces Channels
+data management: pointers 
+
+fmt package implements formatted I/O with functions analogous to C's printf and scanf. 
+Whenever you call print functions, you will get back 2 variables, a numeric value which is the length of the string in the number of characters and the second is an error object.
+(You can recieve these by declaring variables in the beginning of the statement)
+
+
