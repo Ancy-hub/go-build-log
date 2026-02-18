@@ -13,6 +13,7 @@ This repository documents my journey learning **Go** with a strong focus on:
 ### 📂 Structure
 
 This repo contains:
+- Notes taken from Go LinkedIn course.
 - Go implementations of DSA problems  
 - `questions.txt` files with questions and detailed examples. 
 - Pattern-based practice (two pointers, sliding window, stacks, etc.)  
