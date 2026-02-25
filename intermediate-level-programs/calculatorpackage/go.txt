@@ -1,0 +1,5 @@
+module calculatorpackage
+
+go 1.25.5
+
+//change extension to .mod
